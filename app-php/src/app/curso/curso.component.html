@@ -1,0 +1,14 @@
+<p>curso works!</p>
+ 
+<button (click)="cadastro()">cadastro</button>
+<button (click)="selecao()">selecionar</button>
+<button (click)="alterar()">alterar</button>
+<button (click)="remover()">remover</button>
+
+<table style="border-width:3px;">
+    <tr *ngFor="let v of vetor">
+        <td>{{v.idCurso}}</td>
+        <td>{{v.nomeCurso}}</td>
+        <td>{{v.valorCurso}}</td>
+    </tr>
+</table>
